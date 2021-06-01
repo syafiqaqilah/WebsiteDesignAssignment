@@ -33,12 +33,17 @@ h1{
   text-align: center;
 }
 
+#informalbox img{
+  margin-top: 14px;
+  width: 192px;
+}
+
 .boxback div{
   background: #C4C4C4;
   /* padding: 30px; */
   margin: 0 auto;
   width: 226px;
-  height: 325px;
+  height: 300px;
 }
 
 .cardboxback{
