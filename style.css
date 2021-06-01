@@ -1,0 +1,57 @@
+/* Roboto Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  background: #C4C4C4;
+  position: relative;
+  width: 390px;
+  height: 53px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 43px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+}
+
+.boxback{
+  display: grid;
+  max-width: 960px;
+  margin: 0 auto;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+  text-align: center;
+}
+
+.boxback div{
+  background: #C4C4C4;
+  padding: 30px;
+}
+
+.boxback2{
+  width: 226px;
+  height: 325px;
+}
+
+footer{
+  /* Flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  bottom: 0px;
+  left: 0px;
+
+  background: #C4C4C4;
+}
