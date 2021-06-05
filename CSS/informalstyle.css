@@ -37,7 +37,7 @@ body{
   display: flex;
   justify-content: center;
   text-decoration: none;
-  color: white;
+  color: #B43636;
 }
 
 .subtitlecolour{
@@ -207,6 +207,6 @@ footer{
   bottom: 0px;
   left: 0px;
 
-  color: white;
+  color: #B43636;
   background: #FFCACA;
 }

@@ -2,18 +2,196 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body{
+  margin-top: 0;
+  margin-left: 0;
   font-family: 'Roboto', sans-serif;
   background-image: url("../Media/Pictures/crumpled-white-paperboard.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-color:#121212;
 }
 
-h1 a{
+#formalcard{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 700px;
+  color: white;
+  background: #B43636;
+  height: 50px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#sidebar{
+  position: absolute;
+  width: 400px;
+  height: 100%;
+  background: #FFCACA;
+}
+
+#sidebar h1 a{
+  display: flex;
+  justify-content: center;
   text-decoration: none;
-  color: black;
+  color: #B43636;
+}
+
+.subtitlecolour{
+  background: #B43636;
+  max-width: 348px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subtitlecolour ul{
+  color: white;
+  text-align: center;
+  padding: 0;
+}
+
+#greetingbox ul li{
+  color: white;
+  padding-top: 10px;
+  height: 25px;
+  background: #DD6767;
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+}
+
+#backgroundbox{
+  background: #DD6767;
+}
+
+#backgroundtitle{
+  color: white;
+  background: #B43636;
+  display: flex;
+  justify-content: center;
+}
+
+#backgroundbox2 div{
+  display: inline-block;
+}
+
+#backgroundbox2 div img{
+  margin: 0px 10px 10px 10px;
+  width: 100px;
+}
+
+#fontbox{
+  background:#DD6767;
+  width: 348px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#fonttitle{
+  color: white;
+  background: #B43636;
+  text-align: center;
+}
+
+#fontbox ul{
+  padding: 0;
+  text-align: center;
+}
+
+#fontbox ul li{
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  padding-bottom: 10px;
+  margin: 0px 10px 10px 10px;
+}
+
+#inputbox{
+  max-width: 348px;
+  margin: auto;
+}
+
+#inputbox input{
+  width: 190px;
+  float: right;
+  background: #964848;
+  border: 0px;
+  color: white;
+}
+
+.inputbox2{
+  color: white;
+  background: #FF4242;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+#date{
+  color: white;
+}
+
+#time{
+  color: white;
+}
+
+#buttons{
+  max-width: 348px;
+}
+
+#buttons ul div{
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.buttons2{
+  background: #964848;
+  padding: 1px;
+  color: white;
+  padding-left: 2px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+#reset{
+  float: right;
+}
+
+#emailbox{
+  border-radius: 5px;
+  background: #964848;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 348px;
+}
+
+#emailbox ul div{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  padding: 5px;
+  display: inline-block;
+}
+
+#emailbox input{
+  color: white;
+  background: #FF4242;
+  border: 0px;
+  margin-left: 10px;
+  width: 120px;
+}
+
+#send{
+  background: #DD6767;
+  float: right;
+}
+
+#send a{
+  text-decoration: none;
+  color: white;
 }
 
 footer{
@@ -29,5 +207,6 @@ footer{
   bottom: 0px;
   left: 0px;
 
-  background: #C4C4C4;
+  color: #B43636;
+  background: #FFCACA;
 }
