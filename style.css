@@ -125,3 +125,17 @@ footer{
   color: #B43636;
   background: #FFCACA;
 }
+
+/* Mobile view */
+@media screen and (max-width: 768px){
+  .boxback{
+    position: relative;
+    display: grid;
+    max-width: 960px;
+    margin: 0 auto;
+    grid-template-columns: repeat(1,3fr);
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+    text-align: center;
+  }
+}
