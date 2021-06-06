@@ -17,7 +17,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  left: 900px;
+  left: 56%;
   color: white;
   background: #B43636;
   height: 50px;
@@ -26,220 +26,491 @@ body{
   border-radius: 10px;
 }
 
+#sidebar{
+  position: absolute;
+  width: 400px;
+  height: 100%;
+  background: #FFCACA;
+}
+
+#sidebar h1 a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #B43636;
+}
+
+.subtitlecolour{
+  background: #B43636;
+  max-width: 348px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subtitlecolour ul{
+  color: white;
+  text-align: center;
+  padding: 0;
+}
+
+#greetingtitle{
+  color: white;
+  background: #B43636;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+#greetingbox ul li{
+  color: white;
+  padding-top: 10px;
+  height: 25px;
+  background: #DD6767;
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+}
+
+#backgroundbox{
+  background: #DD6767;
+}
+
+#backgroundtitle{
+  color: white;
+  background: #B43636;
+  display: flex;
+  justify-content: center;
+}
+
+#backgroundbox2 div{
+  display: inline-block;
+}
+
+#backgroundbox2 div img{
+  margin: 0px 10px 10px 10px;
+  width: 100px;
+}
+
+#fontbox{
+  background:#DD6767;
+  width: 348px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#fonttitle{
+  color: white;
+  background: #B43636;
+  text-align: center;
+}
+
+#fontbox ul{
+  padding: 0;
+  text-align: center;
+}
+
+#fontbox ul li{
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  padding-bottom: 10px;
+  margin: 0px 10px 10px 10px;
+}
+
+#inputbox{
+  max-width: 348px;
+  margin: auto;
+}
+
+#inputbox input{
+  width: 190px;
+  float: right;
+  background: #964848;
+  border: 0px;
+  color: white;
+}
+
+.inputbox2{
+  color: white;
+  background: #FF4242;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+#date{
+  color: white;
+}
+
+#time{
+  color: white;
+}
+
+#buttons{
+  max-width: 348px;
+}
+
+#buttons ul div{
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.buttons2{
+  background: #964848;
+  padding: 1px;
+  color: white;
+  padding-left: 2px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+#reset{
+  float: right;
+}
+
+#emailbox{
+  border-radius: 5px;
+  background: #964848;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 348px;
+}
+
+#emailbox div{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  padding: 5px;
+  display: inline-block;
+}
+
+#emailbox input{
+  color: white;
+  background: #FF4242;
+  border: 0px;
+  margin-left: 10px;
+  width: 120px;
+}
+
+#send{
+  background: #DD6767;
+  float: right;
+}
+
+#send a{
+  text-decoration: none;
+  color: white;
+}
+
+.a6 img{
+  position: fixed;
+  background: white;
+  width: 400px;
+  top: 15%;
+  left: 50%;
+}
+
+#greetingtext{
+  position: fixed;
+  text-align: center;
+  top: 25%;
+  left: 400px;
+  right: 0;
+
+  color: white;
+}
+
+#recipienttext{
+  position: fixed;
+  text-align: center;
+  top: 35%;
+  left: 400px;
+  right: 0;
+
+  color: white;
+}
+
+#recipienttext[placeholder]:empty:before{
+  content: attr(placeholder);
+}
+
+#addresstext{
+  position: fixed;
+  top: 45%;
+  text-align: center;
+  left: 400px;
+  right: 0;
+
+  color: white;
+}
+
+#datetext{
+  position: fixed;
+  top: 60%;
+  text-align: center;
+  left: 400px;
+  right: 0;
+
+  color: white;
+}
+
+#timetext{
+  position: fixed;
+  top: 65%;
+  text-align: center;
+  left: 400px;
+  right: 0;
+
+  color: white;
+}
+
+footer{
+  /* Flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  bottom: 0px;
+  left: 0px;
+
+  color: #B43636;
+  background: #FFCACA;
+}
+
+/* Responsive sizing */
+
+@media screen and (max-width: 768px){
+
+  #informalcard{
+    position: fixed;
+    top: 0%;
+    left: 60%;
+  }
+
   #sidebar{
-    position: absolute;
-    width: 400px;
-    height: 100%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 45%;
     background: #FFCACA;
   }
 
   #sidebar h1 a{
-    display: flex;
-    justify-content: center;
+    position: fixed;
+    top: 2%;
+    left: 10%;
+    /* right: 0; */
+    text-align: center;
     text-decoration: none;
     color: #B43636;
   }
 
-  .subtitlecolour{
-    background: #B43636;
-    max-width: 348px;
-    margin-left: auto;
-    margin-right: auto;
+  #greetingbox{
+    font-size: 0.7em;
+    position: fixed;
+    bottom: 27%;
+    left: 2%;
+    width: 40%;
+    height: 16%;
   }
-
-  .subtitlecolour ul{
-    color: white;
-    text-align: center;
-    padding: 0;
-  }
-
-  #greetingbox ul li{
-    color: white;
-    padding-top: 10px;
-    height: 25px;
-    background: #DD6767;
-    font-size: 14px;
-    display: block;
-    text-decoration: none;
-  }
-
   #backgroundbox{
-    background: #DD6767;
-  }
-
-  #backgroundtitle{
-    color: white;
-    background: #B43636;
-    display: flex;
-    justify-content: center;
-  }
-
-  #backgroundbox2 div{
-    display: inline-block;
+    position: fixed;
+    bottom: 5.7%;
+    left: 2%;
+    width: 40%;
+    height: 20%;
   }
 
   #backgroundbox2 div img{
-    margin: 0px 10px 10px 10px;
-    width: 100px;
+    height: 5%;
   }
 
   #fontbox{
-    background:#DD6767;
-    width: 348px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #fonttitle{
-    color: white;
-    background: #B43636;
-    text-align: center;
-  }
-
-  #fontbox ul{
-    padding: 0;
-    text-align: center;
-  }
-
-  #fontbox ul li{
-    color: white;
-    display: inline-block;
-    text-decoration: none;
-    padding-bottom: 10px;
-    margin: 0px 10px 10px 10px;
+    position: fixed;
+    bottom: 35%;
+    right: 2%;
+    width: 50%;
+    font-size: 0.9em;
   }
 
   #inputbox{
-    max-width: 348px;
-    margin: auto;
+    position: fixed;
+    bottom: 16%;
+    right: 2%;
+    width: 50%;
+    height: 18%;
+    font-size: 0.8em;
   }
 
   #inputbox input{
-    width: 190px;
-    float: right;
-    background: #964848;
-    border: 0px;
-    color: white;
-  }
-
-  .inputbox2{
-    color: white;
-    background: #FF4242;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 4px;
-  }
-
-  #date{
-    color: white;
-  }
-
-  #time{
-    color: white;
+    width: 50%;
   }
 
   #buttons{
-    max-width: 348px;
-  }
-
-  #buttons ul div{
-    display: inline-block;
-    padding-right: 10px;
-  }
-
-  .buttons2{
-    background: #964848;
-    padding: 1px;
-    color: white;
-    padding-left: 2px;
-    text-align: center;
-    border-radius: 3px;
-  }
-
-  #reset{
-    float: right;
+    width: 50%;
+    position: fixed;
+    bottom: 12%;
+    right: 5%;
   }
 
   #emailbox{
-    border-radius: 5px;
-    background: #964848;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 348px;
-  }
-
-  #emailbox ul div{
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    color: white;
-    padding: 5px;
-    display: inline-block;
-  }
-
-  #emailbox input{
-    color: white;
-    background: #FF4242;
-    border: 0px;
-    margin-left: 10px;
-    width: 120px;
-  }
-
-  #send{
-    background: #DD6767;
-    float: right;
-  }
-
-  #send a{
-    text-decoration: none;
-    color: white;
+    position: fixed;
+    bottom: 5.7%;
+    right: 2%;
+    width: 50%;
+    height: 5%;
   }
 
   footer{
-    /* Flex */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    position: fixed;
-    width: 100%;
-    height: 40px;
-    bottom: 0px;
-    left: 0px;
-
-    color: #B43636;
-    background: #FFCACA;
+    border: 2px solid #B43636;
   }
 
-/* Responsive sizing */
-@media screen and (max-width: 1280px){
-  #informalcard{
+  .a6 img{
     position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 700px;
-    color: white;
-    background: #B43636;
-    height: 50px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
+    top: 10%;
+    left: 240px;
+    width: auto;
+    height: 40%;
+  }
+
+  #greetingtext{
+    top: 15%;
+    left: 0px;
+  }
+  #recipienttext{
+    top: 25%;
+    left: 0px;
+  }
+  #addresstext{
+    top: 35%;
+    left: 0px;
+  }
+  #datetext{
+    top:40%;
+    left: 0px;
+  }
+  #timetext{
+    top: 45%;
+    left: 0px;
   }
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 400px){
+  #sidebar h1 a{
+    font-size: 0.5em;
+    height: 5%;
+  }
+
   #informalcard{
+    font-size: 0.5em;
+    margin: 5px 0 0 0;
+    padding: 2px;
+    height: 5%;
+  }
+
+  .subtitlecolour{
+    background: #DD6767;
+  }
+
+  #greetingbox ul li{
+    font-size: 0.8em;
+    height: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  #greetingbox ul li:nth-child(1){
+    font-size: 0.6em;
+  }
+
+  #backgroundbox2 div img{
+    width: 50px;
+  }
+
+  #fontbox{
+    font-size: 0.8em;
+    height: 8%;
+  }
+
+  #inputbox{
+    margin: 0;
+  }
+
+  .inputbox2{
+    font-size: 0.8em;
+    margin: 0;
+    height: 8%;
+  }
+
+  #recipientbox{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #eventbox{
+    border-radius: 0;
+  }
+
+  #addressbox{
+    border-radius: 0;
+  }
+
+  #date{
+    border-radius: 0;
+  }
+
+  #time{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  #inputbox input{
+    margin: 0;
+  }
+
+  #buttons{
+    font-size: 0.5em;
+    width: 60%;
+  }
+
+  #emailbox{
+    font-size: 0.5em;
+    bottom: 6%;
+    height: 3%;
+  }
+
+  #emailbox div{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0;
+  }
+
+  #emailbox input{
+    font-style: 0.5em;
     position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 550px;
-    color: white;
-    background: #B43636;
-    height: 50px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    width: 30%;
+    height: 2%;
+  }
+
+  #send{
+    position: fixed;
+    right: 2%;
+    height: 1.55%;
+    /* float: none; */
+  }
+
+  footer{
+    height: 3%;
+  }
+
+  .a6 img{
+    left: 93px;
   }
 }

@@ -40,6 +40,20 @@ h1{
   text-align: center;
 }
 
+.boxback div a{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: #d47f7f;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 226px;
+  height: 33px;
+  color: white;
+  text-decoration: none;
+}
+
 #informalbox img{
   margin-top: 14px;
   width: 192px;
@@ -55,38 +69,16 @@ h1{
   width: 192px;
 }
 
+#corporatebox a{
+  margin-top: 110px;
+}
+
 .boxback div{
   background: #ffb3b3;
   /* padding: 30px; */
   margin: 0 auto;
   width: 226px;
   height: 300px;
-}
-
-.cardboxback{
-  position: relative;
-  display: grid;
-  max-width: 960px;
-  margin: 0 auto;
-  grid-template-columns: repeat(3,1fr);
-  grid-gap: 10px;
-}
-
-.cardboxback div{
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  background: #d47f7f;
-  margin: 0 auto;
-  margin-top: 16px;
-  width: 226px;
-  height: 33px;
-}
-
-.cardboxback div a{
-  text-decoration: none;
-  color: white;
 }
 
 #customcard{
@@ -137,5 +129,25 @@ footer{
     grid-gap: 10px;
     grid-auto-rows: auto;
     text-align: center;
+  }
+
+  .boxback div{
+    margin-bottom: 43px;
+  }
+
+  #customcard{
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  h1{
+    font-size: 2em;
+    width: 300px;
+  }
+
+  #customcard{
+    font-size: 1.5em;
+    width: 300px;
   }
 }
